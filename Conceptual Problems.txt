@@ -1,0 +1,58 @@
+1. NoSQL databases store and retrieve data differently than standard SQL databases. 
+Instead of rows and columns, NoSQL databases employ flexible data models such as documents, key-value pairs, graphs, or wide-column storage. 
+This makes them ideal for processing massive amounts of unstructured or semi-structured data, resulting in excellent performance and scalability. 
+They're commonly employed in big data and real-time online applications.
+
+2. The right time when we use NoSQL are below: 
+    - the dataset is unstructured or semi-structured data in large volumes
+    - high scalability and performance
+    - when the data model is flexible and change over time
+    - when in real-time web applications, fast read or write operations required
+
+2. The right time when we use Relational Database Management System are below: 
+    - data is structured that fits into tables with rows and columns
+    - when complicated queries and transactions required
+    - data integriy and consistency are critical
+    - have well-defined relationships between data elements
+
+3. Two samples of tools or platform NoSQL other than ElasticSearch are MongoDB and CouchDB
+    
+    a. MongoDB
+        - *Flexible Schema* : stores data in JSON like format, allowing for easy 
+        handling of unstructured & semi-structured data. 
+        - *Scalability* : Enables horizontal scaling via sharding, which data across
+        several servers.
+        - *Rich Query Language* : Ad hoc queries, indexing, and real-time aggregation
+        are all supported by this robust query language. 
+
+    b. CouchDB
+        - Schema-Free JSON Documents : Stores data in JSON format, allowing for flexible
+        and dynamic schemas
+        - Multi-Version Concurrency Control (MVCC) : Maintains high consistency and prevents
+        conflicts, assuring data trustworthiness.
+        - Replication & Synchronisation : Enables simple replication and Synchronisation
+        across many servers, which is useful for offline applications
+
+4. Airflow automates and schedules workflows. It lets you to build, schedule, 
+    and monitor complicated data pipelines in code, making it simple to manage and track data jobs.
+
+5. Great Expectations is a tool that allows you to guarantee that your data satisfies particular quality requirements. 
+It lets you set "expectations" or rules for your data, like no missing values or certain value ranges. 
+When your data is processed, Great Expectations evaluates it against these standards and creates reports to help you identify mistakes and maintain data quality.
+
+6. Batch processing refers to the processing of huge amounts of data in single batch during a specific time period.
+
+    NBA Game Statistics servers as an example of batch processing. 
+
+    Here are the story behind NBA Game Statistics Analysis:
+
+        - Data collection involves acquiring game statistics, such as player's perfomrance,
+        team scores, and outcomes.
+
+        - Batch Processing: to evaluate collected data, execute a batch job on daily, weekly, or monthly basis.
+        
+        - Output: create reports that summarise the insights gained from the data analysis. 
+
+    According to the story above, we may conclude that using batch processing, 
+    we can efficiently analyse vast volumens of historical NBA data, discover trends, 
+    and amke informed judgements based on the insights garnered from the analysis.
